@@ -1,0 +1,20 @@
+import java.util.Random;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Random random = new Random();
+        int h1 = 12;
+        int m1 = 20;
+        int s1 = 0;
+        int h2 = random.nextInt(4);
+        int m2 = random.nextInt(60);
+        int s2 = random.nextInt(60);
+        int time1 = h1 * 3600 + m1 * 60 + s1;
+        int time2 = h2 * 3600 + m2 * 60 + s2;
+        if (time1 <= time2)
+            System.out.println("Петя успевает на уроки");
+        else
+            System.out.println("Петя опоздал на уроки");
+    }
+}
